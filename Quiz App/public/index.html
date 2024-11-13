@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz App</h1>
+    
+    <!-- Sign-In Section -->
+    <div id="login-section">
+      <h2>Sign In</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button id="login-btn">Sign In</button>
+      <button id="signup-btn">Sign Up</button>
+      <p id="error-message" style="color: red;"></p>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" style="display: none;">
+      <div id="question-container">
+        <p id="question"></p>
+        <ul id="options"></ul>
+      </div>
+      <button id="next-button">Next</button>
+      <div id="score" style="display: none;"></div>
+    </div>
+
+    <button id="logout-btn" style="display: none;">Logout</button>
+  </div>
+</body>
+</html>
